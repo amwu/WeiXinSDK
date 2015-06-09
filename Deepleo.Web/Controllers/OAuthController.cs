@@ -98,8 +98,6 @@ namespace Deepleo.Web.Controllers
 
             //授权成功 取得用户信息 userinfo  跳转页面
 
-
-            //return RedirectToAction("Success", "OAuth");
             return new RedirectResult(redirect_url, true);
         }
 
