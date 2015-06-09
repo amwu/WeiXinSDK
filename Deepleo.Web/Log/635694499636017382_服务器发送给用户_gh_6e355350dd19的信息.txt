@@ -1,0 +1,2 @@
+﻿<xml><ToUserName><![CDATA[oakEeuDhkh0LpFrbf8f_JeRmAEy4]]></ToUserName><FromUserName><![CDATA[gh_6e355350dd19]]></FromUserName><CreateTime>1433824363</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[OAuth2.0网页授权演示
+<a href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx900d3f192635b1c9&redirect_uri=http://bjflxd.eicp.net/OAuth/Callback&response_type=code&scope=snsapi_userinfo&state=8587677825218788427#wechat_redirect">点击这里体验</a>]]></Content></xml>

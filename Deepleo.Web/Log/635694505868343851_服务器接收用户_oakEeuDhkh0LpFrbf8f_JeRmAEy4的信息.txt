@@ -1,0 +1,7 @@
+﻿C:\Users\Administrator\Desktop\weixinSDK-master\weixinSDK-master\Deepleo.Web\Log\635694505868343851_服务器接收用户_oakEeuDhkh0LpFrbf8f_JeRmAEy4的信息.txt<xml><ToUserName><![CDATA[gh_6e355350dd19]]></ToUserName>
+<FromUserName><![CDATA[oakEeuDhkh0LpFrbf8f_JeRmAEy4]]></FromUserName>
+<CreateTime>1433825011</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[binduser]]></EventKey>
+</xml>
