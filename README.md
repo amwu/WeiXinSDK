@@ -148,15 +148,6 @@ Deepleo.Web/Views/JSSDK/Pay.cshtml
        
         譬如，如果您一个网站需要管理多个微信公众号的情况。
 
-3）遇到其他问题该如何解决?
-
-    答：如果开发者遇到开发问题或者遇到SDK的bug，请到
-
-     a.官方QQ群：173564082 
-
-     b.论坛：http://www.weixinsdk.net/
-
-     c.作者QQ：2586662969
 
 7.注意事项
 
@@ -169,18 +160,9 @@ Deepleo.Web/Views/JSSDK/Pay.cshtml
 4）微信自带开发者问答系统，上面都是前车之鉴，有一定参考价值。
 
 
-8.源代码托管：https://github.com/night-king/weixinSDK
+8.源代码托管：https://github.com/lscrhd/WeiXinSDK
 
 
-9.Copyright and license
-
-Code and documentation copyright 2011-2015. Code released under the MIT license. Docs released under Creative Commons.
-
-10.建议加入官方QQ群第一时间获取API更新的最新动态：173564082
-
-11.郑重申明
-
-本SDK不收费，坚持开源，没有未公开的api，项目中的代码是我自己开发过的项目积累。如果在使用中遇到什么问题，请到官方QQ群或者论坛中提问，直接加我私人QQ提问的概不做答。如果发现bug，请到https://github.com/night-king/weixinSDK/issues 提出，我会尽快解决，并发布论坛QQ群群邮件、论坛bug栏目、以及QQ群通知。
 
 12.捐助
 
