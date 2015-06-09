@@ -118,16 +118,6 @@ Deepleo.Web/Views/JSSDK/Pay.cshtml
 
 5.demo
  Deepleo.Web项目，请编译后发布到服务器，并修改web.config(appid,appsecrect,Token,EncodingAESKey)， 在后台将服务地址改为：[域名]/weixin。demo在线演示请关注微信公众号：
-
-(1) 鸣创软件(订阅号所有可以实现的功能演示,)
-    <img src="http://weixinsdk.net/data/attachment/forum/201502/02/102815etfqqqfvj9tdtjz4.jpg" style="width:100px; height:100px;"/>
-
-(2) 慢做菜(基于WeixinSDK实现的菜谱查询服务)
-     <img src="http://weixinsdk.net/data/attachment/forum/201502/02/102818c29jxbepe2nbjm2n.jpg" style="width:100px; height:100px;"/>
-
-(3) http://weixinsdk.deepleo.com/jssdk (js-sdk演示,需要在微信中打开， 由于本公众号只是未认证订阅号，故请对照后台权限测试)
-
-
 6.问题帮助
 
 1）API返回的Dynamic对象应该如何使用？
@@ -158,15 +148,6 @@ Deepleo.Web/Views/JSSDK/Pay.cshtml
        
         譬如，如果您一个网站需要管理多个微信公众号的情况。
 
-3）遇到其他问题该如何解决?
-
-    答：如果开发者遇到开发问题或者遇到SDK的bug，请到
-
-     a.官方QQ群：173564082 
-
-     b.论坛：http://www.weixinsdk.net/
-
-     c.作者QQ：2586662969
 
 7.注意事项
 
@@ -179,22 +160,12 @@ Deepleo.Web/Views/JSSDK/Pay.cshtml
 4）微信自带开发者问答系统，上面都是前车之鉴，有一定参考价值。
 
 
-8.源代码托管：https://github.com/night-king/weixinSDK
+8.源代码托管：https://github.com/lscrhd/WeiXinSDK
 
 
-9.Copyright and license
-
-Code and documentation copyright 2011-2015. Code released under the MIT license. Docs released under Creative Commons.
-
-10.建议加入官方QQ群第一时间获取API更新的最新动态：173564082
-
-11.郑重申明
-
-本SDK不收费，坚持开源，没有未公开的api，项目中的代码是我自己开发过的项目积累。如果在使用中遇到什么问题，请到官方QQ群或者论坛中提问，直接加我私人QQ提问的概不做答。如果发现bug，请到https://github.com/night-king/weixinSDK/issues 提出，我会尽快解决，并发布论坛QQ群群邮件、论坛bug栏目、以及QQ群通知。
 
 12.捐助
 
 如果这个项目对您有用，我们欢迎各方任何形式的捐助，也包括参与到项目代码更新或意见反馈中来。谢谢！资金捐助：
 
-  <img src="http://weixinsdk.net/data/attachment/forum/201504/10/143139l7bw4jbtj5317tzd.jpg" style="width:100px; height:100px;"/>
 
