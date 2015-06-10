@@ -13,7 +13,7 @@ namespace Deepleo.Web.Controllers
 
         public ActionResult Index()
         {
-
+            ViewBag.Useragent = Request.Browser.IsMobileDevice.ToString();
             ViewBag.Greeting = WeixinConfig.TokenHelper.GetToken();
             return View();
             //return Content("参数错误！");

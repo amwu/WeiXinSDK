@@ -43,18 +43,8 @@ namespace Deepleo.Web
             {
                 case WeixinMessageType.Text://文字消息
                     string userMessage = message.Body.Content.Value;
-
                     if (userMessage.Equals("订阅"))
                     {
-                        //result = ReplayPassiveMessageAPI.RepayNews(openId, myUserName,
-                        //                                 new WeixinNews
-                        //                                 {
-                        //                                     title = "欢迎订阅",
-                        //                                     description = "欢迎订阅，点击此消息查看在线demo",
-                        //                                     picurl = string.Format("{0}/Images/ad.jpg", domain),
-                        //                                     url = domain
-                        //                                 });
-
                         List<WeixinNews> list = new List<WeixinNews>();
                         list.Add(new WeixinNews { title = "新闻1", description = "欢迎订阅，点击此消息查看在线demo", picurl = string.Format("{0}/Images/ad.jpg", domain), url = domain });
                         list.Add(new WeixinNews { title = "新闻2", description = "欢迎订阅，点击此消息查看在线demo", picurl = string.Format("{0}/Images/ad.jpg", domain), url = domain });
@@ -71,13 +61,7 @@ namespace Deepleo.Web
                         var CQuery = CustomMenuAPI.Query(token);
                         if (CQuery.errcode == 46003)
                         {
-
-
-
-
                             string strrr = "{\"button\":[ {\"type\":\"click\", \"name\":\"今日歌曲\",\"key\":\"V1001_TODAY_MUSIC\" },{\"name\":\"菜单\", \"sub_button\":[ { \"type\":\"view\", \"name\":\"搜索\", \"url\":\"http://www.soso.com\"},{\"type\":\"view\", \"name\":\"视频\", \"url\":\"http://v.qq.com\" }, { \"type\":\"click\", \"name\":\"赞一下我们\", \"key\":\"V1001_GOOD\"}]}]}";
-
-
                             string str = CustomMenuAPI.Create(token, strrr) ? "菜单创建成功" : "菜单创建失败";
                             result = ReplayPassiveMessageAPI.RepayText(openId, myUserName, str);
 
@@ -86,17 +70,13 @@ namespace Deepleo.Web
                         {
                             result = ReplayPassiveMessageAPI.RepayText(openId, myUserName, "菜单数据");
                         }
-
-
                     }
 
                     else
                     {
+                       // result = ReplayPassiveMessageAPI.RepayText(openId, myUserName, "欢迎使用，您输入了：" + userMessage);
 
-                        result = ReplayPassiveMessageAPI.RepayText(openId, myUserName, "欢迎使用，您输入了：" + userMessage);
                     }
-
-
                     break;
                 case WeixinMessageType.Image://图片消息
                     string imageUrl = message.Body.PicUrl.Value;//图片地址

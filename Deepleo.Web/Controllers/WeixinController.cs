@@ -49,7 +49,6 @@ namespace Deepleo.Web.Controllers
         public ActionResult Post(string signature, string timestamp, string nonce, string echostr)
         {
 
-
             //尽管微信其他请求是以POST提交的，但是其URL中同样携带了签名信息，我们同样需要进行签名认证。所以为了安全起见，建议每次请求都进行签名认证。
             var ent = "";
             if (!BasicAPI.CheckSignature(signature, timestamp, nonce, token, out ent))
@@ -89,7 +88,7 @@ namespace Deepleo.Web.Controllers
 
                 //测试时可开启此记录，帮助跟踪数据。
                 string path = Server.MapPath("~/Log/" + DateTime.Now.Ticks + "_服务器接收用户_" + message.Body.FromUserName.Value + "的信息.txt");
-                System.IO.File.AppendAllText(path, path + decryptMsg, Encoding.UTF8);
+                System.IO.File.AppendAllText(path, decryptMsg, Encoding.UTF8);
 
 
             }
@@ -118,9 +117,13 @@ namespace Deepleo.Web.Controllers
             }
             #endregion
 
-            //测试时可开启此记录，帮助跟踪数据。
+            ////测试时可开启此记录，帮助跟踪数据。
             string path2 = Server.MapPath("~/Log/" + DateTime.Now.Ticks + "_服务器发送给用户_" + message.Body.ToUserName.Value + "的信息.txt");
             System.IO.File.AppendAllText(path2, response, Encoding.UTF8);
+
+            //获取微信版本
+            //System.IO.File.AppendAllText(path2, Request.UserAgent, Encoding.UTF8);
+
 
             return new ContentResult
             {
